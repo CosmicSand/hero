@@ -1,73 +1,143 @@
-/* Звільняємо посилання від підкреслень та списки від маркерів, скидання значень відступів. Для зображень - зміна типу елемента для прибирання порожнього місця пид ними, а також обрана властивість, що дозволяє повністю заповнити простір батькивського елемента зі збереженням пропорцій*/
+@import "./container.css";
+@import "./common.css";
+/* ============================= adaptive =========================== */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  object-fit: cover;
-}
-input {
-  outline: none;
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-fieldset {
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.list {
-  list-style-type: none;
-}
-
-/* Для кнопки - долонька) та шрифт, що його вона не успадкує від body */
-
-button {
-  cursor: pointer;
-  font-family: inherit;
-}
-
-/* Задаємо глобальний стиль: шрифт, який використовується більш за інших на сторінці, відповідно фон та колір шрифта */
-
-body {
-  font-family: Manrope, sans-serif;
-  color: #fcf9f9;
-  background-color: #1c2225;
-}
-address {
-  font-style: normal;
-}
-
-.space {
-  height: 100px;
-  background-color: beige;
+.hero-star-embr {
+  display: none;
 }
 
 .hero-section-container {
+  padding-top: 60px;
+  margin-bottom: 100px;
+}
+.hero-align-container {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 40px;
+}
+.hero-model-img {
+  width: 100%;
+}
+.hero-title {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.23;
+  letter-spacing: -0.03em;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.hero-text-accent {
+  color: #ecd979;
+}
+
+.hero-link {
+  display: flex;
+  column-gap: 10px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  width: fit-content;
+  padding: 14px 36px;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+@media screen and (min-width: 375px) {
+  .hero-model-img {
+    width: 335px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  * .hero-section-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+  }
+  .hero-model-img {
+    width: 413px;
+  }
+
+  .hero-title {
+    margin-top: 26px;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 1.19;
+  }
+
+  .hero-star-embr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-star-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    max-width: 115px;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-hand-made-text {
+    letter-spacing: -0.04em;
+    color: rgba(252, 249, 249, 0.4);
+  }
+  .hero-embr {
+    width: 140px;
+    height: 97px;
+    border-radius: 50% 50% 100% 0% / 100% 100% 0% 0%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-embr {
+    width: 140px;
+    height: 100px;
+    border-radius: 50% 50% 100% 0% / 100% 100% 0% 0%;
+    overflow: hidden;
+  }
+
+  .hero-section-container {
+    padding-top: 100px;
+    margin-bottom: 100px;
+  }
+  .hero-align-container {
+    flex-direction: row;
+    column-gap: 40px;
+    row-gap: 0;
+  }
+  /* .hero-model-img {
+    width: 392px;
+  } */
+
+  .hero-title {
+    width: 518px;
+    margin-top: 94px;
+  }
+  .hero-star-container {
+    margin-top: 66px;
+  }
+}
+
+/* .hero-btn-arrow {
+  margin-left: 10px;
+} */
+/* .hero-model-img {
+  width: 392px;
+} */
+
+/* .hero-section-container {
   display: flex;
   justify-content: space-between;
   max-width: 1280px;
@@ -104,7 +174,6 @@ address {
   width: fit-content;
   padding: 14px 39px;
   margin-left: 141px;
-  /* margin-right: auto; */
   color: inherit;
   text-transform: uppercase;
   font-weight: 600;
@@ -144,4 +213,4 @@ address {
 .hero-hand-made-text {
   letter-spacing: -0.04em;
   color: rgba(252, 249, 249, 0.4);
-}
+} */
