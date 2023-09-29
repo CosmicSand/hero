@@ -98,6 +98,24 @@
     justify-content: space-between;
     align-items: center;
   }
+  .hero-star {
+    animation: 10s ease-in-out 1s infinite alternate rotate;
+    animation-play-state: paused;
+  }
+
+  .hero-star-embr:hover .hero-star,
+  .hero-star-embr:focus .hero-star {
+    animation-play-state: running;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
   .hero-star-container {
     display: flex;
