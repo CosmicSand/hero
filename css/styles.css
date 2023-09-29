@@ -53,13 +53,14 @@
   font-weight: 600;
   letter-spacing: -0.04em;
   text-align: center;
-
   outline: transparent;
   transition: border-color 250ms ease-in-out;
 }
+
 .hero-link:hover,
 .hero-link:focus {
   border-color: #ecd979;
+  animation-play-state: running;
 }
 .hero-btn-arrow {
   fill: #ecd979;
@@ -98,6 +99,7 @@
     justify-content: space-between;
     align-items: center;
   }
+
   .hero-star {
     animation: 10s ease-in-out 1s infinite alternate rotate;
     animation-play-state: paused;
@@ -176,6 +178,8 @@
   width: 392px;
 } */
 
+/* infinite alternate */
+
 /* .hero-section-container {
   display: flex;
   justify-content: space-between;
@@ -252,4 +256,20 @@
 .hero-hand-made-text {
   letter-spacing: -0.04em;
   color: rgba(252, 249, 249, 0.4);
-} */
+}
+
+  animation: 2s ease-in-out 0s infinite alternate cool;
+  animation-play-state: paused;
+}
+
+
+@keyframes cool {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+
+*/
