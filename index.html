@@ -36,8 +36,17 @@
           <div class="hero-align-container">
             <img
               class="hero-model-img"
+              srcset="
+                ./images/hero/model.jpg      392w,
+                ./images/hero/model@2x.jpg   784w,
+                ./images/hero/model-t.jpg    413w,
+                ./images/hero/model-t@2x.jpg 826w,
+                ./images/hero/model-m.jpg    335w,
+                ./images/hero/model-m@2x.jpg 670w
+              "
+              sizes="(min-width: 1280px) 392px, (min-width: 768px) 413px, (max-width: 767px) 335px"
               src="./images/hero/model.jpg"
-              alt="Model"
+              alt="Model in embrjidered shirt"
             />
             <div class="hero-title-container">
               <div class="hero-title-alignment-container">
@@ -57,11 +66,21 @@
           </div>
           <div class="hero-star-embr">
             <div class="hero-star-container">
-              <img class="hero-star" src="./images/star.png" alt="" />
+              <img
+                class="hero-star"
+                srcset="./images/hero/star@2x.png 2x"
+                src="./images/star.png"
+                alt=""
+              />
               <p class="hero-hand-made-text">all embroidery is made by hand</p>
             </div>
             <div class="hero-embr">
-              <img class="hero-ua" src="./images/hero/uaemb-t.jpg" alt="" />
+              <img
+                class="hero-ua-img"
+                srcset="./images/hero/uaemb@2x.jpg 2x"
+                src="./images/hero/uaemb.jpg"
+                alt="Lovely Ukraine on shirt"
+              />
             </div>
           </div>
         </div>
