@@ -48,15 +48,10 @@ button {
 }
 
 body {
-  font-family: Manrope, sans-serif;
-  color: #fcf9f9;
-  background-color: #1c2225;
+  font-family: "Manrope", sans-serif;
+  color: var(--primary-color);
+  background-color: var(--background-color);
 }
 address {
   font-style: normal;
-}
-
-.space {
-  height: 100px;
-  background-color: beige;
 }
