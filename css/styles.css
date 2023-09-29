@@ -1,6 +1,7 @@
 @import "./container.css";
 @import "./common.css";
-/* ============================= adaptive =========================== */
+
+/* ============================= Adaptive =========================== */
 
 .hero-star-embr {
   display: none;
@@ -15,9 +16,6 @@
   flex-direction: column-reverse;
   row-gap: 40px;
 }
-/* .hero-model-img {
-  width: 100%;
-} */
 
 .hero-title-container {
   display: flex;
