@@ -15,9 +15,9 @@
   flex-direction: column-reverse;
   row-gap: 40px;
 }
-.hero-model-img {
+/* .hero-model-img {
   width: 100%;
-}
+} */
 
 .hero-title-container {
   display: flex;
@@ -72,6 +72,8 @@
   }
 }
 
+/* ======================== Tablet ========================  */
+
 @media screen and (min-width: 768px) {
   * .hero-section-container {
     display: flex;
@@ -119,9 +121,11 @@
     overflow: hidden;
   }
   .hero-ua-img {
-    scale: 1.1;
+    transform: scale(1.1);
   }
 }
+
+/* ======================== Desktop ========================  */
 
 @media screen and (min-width: 1280px) {
   .hero-section-container {
@@ -167,7 +171,7 @@
     overflow: hidden;
   }
   .hero-ua-img {
-    scale: 1;
+    transform: scale(1);
   }
 }
 
